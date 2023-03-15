@@ -97,8 +97,8 @@ class AZlyrics(Requester):
             return 1
         
         # v3.0.4: Update title and artist attributes with exact names
-        self.artist = filtr(metadata[0][:-7], True)
-        self.title = filtr(metadata[1][1:-1], True)
+        # self.artist = filtr(metadata[0][:-7], True)
+        # self.title = filtr(metadata[1][1:-1], True)
 
         lyrics = parseLyric(page)
         self.lyrics = lyrics.strip()
